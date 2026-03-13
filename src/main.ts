@@ -10,7 +10,7 @@ const profile = {
   name: "Mac-Collins Ogbonnah",
   shortName: "Mac",
   role: "Junior Software Developer",
-  location: "Bolton, United Kingdom",
+  location: "Wigan, United Kingdom",
   email: "blaise131@icloud.com",
   linkedin: "https://www.linkedin.com/in/maccollinsmatblas",
   github: "https://github.com/Blaise131",
@@ -35,7 +35,7 @@ const experiences = [
   {
     title: "Assistant Sales Manager",
     company: "Betfred",
-    date: "Jan 2019 - Present",
+    date: "Jan 2019 - Jul 2024",
     location: "Bolton, United Kingdom",
     bullets: [
       "Processed over-the-counter betting transactions contributing to 146% YTD shop profit.",
@@ -100,13 +100,11 @@ app.innerHTML = `
   <main class="page-shell">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Open to software opportunities</p>
         <h1>${profile.shortName}</h1>
         <p class="role-line">${profile.role}</p>
         <p class="intro">${profile.summary}</p>
 
         <div class="cta-row">
-          <a class="button primary" href="./cv.pdf" download>Download CV</a>
           <a class="button secondary" href="${profile.linkedin}" target="_blank" rel="noreferrer">LinkedIn</a>
           <a class="button secondary" href="${profile.github}" target="_blank" rel="noreferrer">GitHub</a>
         </div>
@@ -125,7 +123,7 @@ app.innerHTML = `
           This page brings together your downloadable CV, LinkedIn profile, and GitHub profile in one clean public link.
         </p>
         <div class="mini-links">
-          <a href="./cv.pdf" download>Resume PDF</a>
+          <a class="button primary hero-download" href="./cv.pdf" download>Download CV</a>
           <a href="${profile.linkedin}" target="_blank" rel="noreferrer">LinkedIn Profile</a>
           <a href="${profile.github}" target="_blank" rel="noreferrer">GitHub Profile</a>
           <a href="mailto:${profile.email}">Email Contact</a>
