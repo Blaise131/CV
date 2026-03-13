@@ -123,7 +123,7 @@ app.innerHTML = `
           This page brings together your downloadable CV, LinkedIn profile, and GitHub profile in one clean public link.
         </p>
         <div class="mini-links">
-          <a class="button primary hero-download" href="./cv.pdf" download>Download CV</a>
+          <a class="button primary hero-download" href="./cv.pdf" download="Mac_CV.pdf">Download CV</a>
           <a href="${profile.linkedin}" target="_blank" rel="noreferrer">LinkedIn Profile</a>
           <a href="${profile.github}" target="_blank" rel="noreferrer">GitHub Profile</a>
           <a href="mailto:${profile.email}">Email Contact</a>
