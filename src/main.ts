@@ -104,11 +104,6 @@ app.innerHTML = `
         <p class="role-line">${profile.role}</p>
         <p class="intro">${profile.summary}</p>
 
-        <div class="cta-row">
-          <a class="button secondary" href="${profile.linkedin}" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="button secondary" href="${profile.github}" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-
         <ul class="quick-facts" aria-label="Quick profile details">
           <li>${profile.name}</li>
           <li>${profile.location}</li>
@@ -118,10 +113,7 @@ app.innerHTML = `
 
       <aside class="hero-card">
         <p class="card-label">Shareable profile</p>
-        <h2>One link for applications</h2>
-        <p>
-          This page brings together your downloadable CV, LinkedIn profile, and GitHub profile in one clean public link.
-        </p>
+        <h2>Links</h2>
         <div class="mini-links">
           <a class="button primary hero-download" href="./cv.pdf" download="Mac_CV.pdf">Download CV</a>
           <a href="${profile.linkedin}" target="_blank" rel="noreferrer">LinkedIn Profile</a>
